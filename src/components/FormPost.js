@@ -105,25 +105,30 @@ export default function FormNews() {
                         <Form.Group as={Col} controlId="formGridPassword">
                             <Form.Label className="text-white">Tema</Form.Label>
                             <select className="form-control" value={hand} onChange={handleChange}>
+                                <option value="Amizade">Amizade</option>
                                 <option value="Amor">Amor</option>
                                 <option value="Amor Proprio" >Amor Proprio</option>
+                                <option value="Aniversario" >Aniversario</option>
                                 <option value="Autoestima" >Autoestima</option>
                                 <option value="Auto Ajuda" >Auto Ajuda</option>
+                                <option value="Boa noite" >Bom noite</option>
+                                <option value="Boa tarde" >Boa tarde</option>
+                                <option value="Bom dia" >Bom dia</option>
                                 <option value="Carta Para Ex" >Carta Para Ex</option>
                                 <option value="Decepção">Decepção</option>
                                 <option value="Decepção Amorosa" >Decepção Amorosa</option>
                                 <option value="Declaração de Amor" >Declaração de Amor</option>
                                 <option value="Desilusão" >Desilusão</option>
                                 <option value="Desilusão Amorosa" >Desilusão Amorosa</option>
-                                <option value="Escritores" >Escritores</option>
+                                <option value="Dia das maes" >Dia das maes</option>
+                                <option value="Dia dos pais" >Dia dos pais</option>
+                                <option value="Familia" >Familia</option>
+                                <option value="Filhos" >Filhos</option>
                                 <option value="Fim de Relacionamento" >Fim de Relacionamento</option>
-                                <option value="Frases" >Frases</option>
-                                <option value="Frases de amor" >Frases de amor</option>
                                 <option value="Frustação" >Frustação</option>
                                 <option value="Ilusão" >Ilusão</option>
                                 <option value="Motivação" >Motivação</option>
                                 <option value="Namoro" >Namoro</option>
-                                <option value="Pensamentos" >Pensamentos</option>
                                 <option value="Reciprocidade" >Reciprocidade</option>
                                 <option value="Recomeçar" >Recomeçar</option>
                                 <option value="Reflexões" >Reflexões</option>
@@ -131,7 +136,7 @@ export default function FormNews() {
                                 <option value="Relacionamento Amoroso" >Relacionamento Amoroso</option>
                                 <option value="Saudade" >Saudade</option>
                                 <option value="Superação" >Superação</option>
-                                <option value="Texto" >Texto</option>
+                                <option value="Texto +18">Texto +18</option>
                                 <option value="Texto de Amor">Texto de Amor</option>
                                 <option value="Texto de Decepção" >Texto de Decepção</option>
                                 <option value="Texto de Termino" >Texto de Termino</option>
@@ -140,8 +145,7 @@ export default function FormNews() {
                                 <option value="Texto Sobre a Vida" >Texto Sobre a Vida</option>
                                 <option value="Texto Sobre Reciprocidade" >Texto Sobre Reciprocidade</option>
                                 <option value="Texto Sobre Relacionamento" >Texto Sobre Relacionamento</option>
-                                <option value="Textão" >Textão</option>
-                                <option value="Vida" >Vida</option>
+            
                             </select>
                         </Form.Group>
                     </Form.Row>
