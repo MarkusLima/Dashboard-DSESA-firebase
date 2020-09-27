@@ -53,7 +53,7 @@ export default function FormNews() {
         if (minuto < 10) {
             minuto = "0" + minuto;
         }
-        var dataAtual = dia + "/" + mes+" - "+ hora + ":" + minuto;
+        var dataAtual = dia + "/" + mes + " - " + hora + ":" + minuto;
         setDt({ dataAtual })
     }, [])
 
@@ -73,23 +73,13 @@ export default function FormNews() {
                     })
                     alert("Menssagem salva!")
                 }
-            } catch (error) {
-                alert(error)
-            }
-
-        } else {
-            alert("Preencha todos os dados do formulário!")
-        }
+            } catch (error) {alert(error)}
+        } else {alert("Preencha todos os dados do formulário!")}
     }
 
-    const handleChange = (event) => {
-        setHand(event.target.value)
-    }
+    const handleChange = (event) => {setHand(event.target.value)}
 
-    const handleSubmit = (event) => {
-        //alert('Your favorite flavor is: ' + value);
-        event.preventDefault();
-    }
+    const handleSubmit = (event) => {event.preventDefault();}
 
     return (
         <Container>
@@ -105,47 +95,121 @@ export default function FormNews() {
                         <Form.Group as={Col} controlId="formGridPassword">
                             <Form.Label className="text-white">Tema</Form.Label>
                             <select className="form-control" value={hand} onChange={handleChange}>
-                                <option value="Amizade">Amizade</option>
+                                <option value="AmizadeFrases de Bob Marley">Frases de Bob Marley</option>
+                                <option value="Frases de Amor">Frases de Amor</option>
+                                <option value="Poemas de Amizade">Poemas de Amizade</option>
+                                <option value="Frases Bonitas">Frases Bonitas</option>
+                                <option value="Frases de Saudades">Frases de Saudades</option>
+                                <option value="Mensagens de Reflexão">Mensagens de Reflexão</option>
+                                <option value="Textos de Amor">Textos de Amor</option>
+                                <option value="Frases de Otimismo">Frases de Otimismo</option>
+                                <option value="Poemas de Amor">Poemas de Amor</option>
+                                <option value="Versos Curtos de Amor">Versos Curtos de Amor</option>
+                                <option value="Textos de Amizade">Textos de Amizade</option>
+                                <option value="Frases de Fernando Pessoa">Frases de Fernando Pessoa</option>
+                                <option value="Versos de Amizade">Versos de Amizade</option>
+                                <option value="Frases de Shakespeare">Frases de Shakespeare</option>
+                                <option value="Frases fortes de Shakespeare">Frases fortes de Shakespeare</option>
+                                <option value="Poesias de Carlos Drummond de Andrade">Poesias de Carlos Drummond de Andrade</option>
+                                <option value="Frases de Mario Quintana">Frases de Mario Quintana</option>
+                                <option value="Frases de Paulo Coelho">Frases de Paulo Coelho</option>
+                                <option value="Frases Dia das Mães">Frases Dia das Mães</option>
+                                <option value="Frases de Bom Dia para Alguém Especial">Frases de Bom Dia para Alguém Especial</option>
+                                <option value="Cartas de Amor para Namorados">Cartas de Amor para Namorados</option>
+                                <option value="Poemas de Saudade">Poemas de Saudade</option>
+                                <option value="Frases de Albert Einstein">Frases de Albert Einstein</option>
+                                <option value="Mensagens de Aniversário">Mensagens de Aniversário</option>
+                                <option value="Frases de Reflexão">Frases de Reflexão</option>
+                                <option value="Mensagens para Amigos">Mensagens para Amigos</option>
+                                <option value="Frases de Vida">Frases de Vida</option>
+                                <option value="Frases de Carlos Drummond de Andrade">Frases de Carlos Drummond de Andrade</option>
+                                <option value="Frases de Chico Xavier">Frases de Chico Xavier</option>
+                                <option value="Frases de Natal">Frases de Natal</option>
+                                <option value="Mensagem para Amiga">Mensagem para Amiga</option>
+                                <option value="Frases de Quem Sou Eu">Frases de Quem Sou Eu</option>
+                                <option value="Frases Pequenas e Bonitas">Frases Pequenas e Bonitas</option>
+                                <option value="Frases de Amizade">Frases de Amizade</option>
+                                <option value="Frases para levantar a autoestima">Frases para levantar a autoestima</option>
+                                <option value="Frases de Nietzsche">Frases de Nietzsche</option>
+                                <option value="Versos Românticos">Versos Românticos</option>
+                                <option value="Frases para Namorada">Frases para Namorada</option>
+                                <option value="Poemas que Falam quem eu sou">Poemas que Falam quem eu sou</option>
+                                <option value="Frases Românticas">Frases Românticas</option>
+                                <option value="Frases de Decepção Amorosa">Frases de Decepção Amorosa</option>
+                                <option value="Frases de Amigos">Frases de Amigos</option>
+                                <option value="Frases de Augusto Cury">Frases de Augusto Cury</option>
+                                <option value="Poemas Românticos">Poemas Românticos</option>
+                                <option value="Poemas de Amigos">Poemas de Amigos</option>
+                                <option value="Poemas Famosos de Amor">Poemas Famosos de Amor</option>
+
+                                <option value="Frases para Amiga">Frases para Amiga</option>
+                                <option value="Frases de Motivação">Frases de Motivação</option>
+                                <option value="Frases sobre Família">Frases sobre Família</option>
+                                <option value="Frases de Despedida">Frases de Despedida</option>
+                                <option value="Mensagens de Feliz Aniversário">Mensagens de Feliz Aniversário</option>
+                                <option value="Frases de Impacto">Frases de Impacto</option>
+                                <option value="Frases Tristes">Frases Tristes</option>
+                                <option value="Mensagens de Amizade">Mensagens de Amizade</option>
+                                <option value="Poesia de Amigas para Sempre">Poesia de Amigas para Sempre</option>
+                                <option value="Frases de Aniversário">Frases de Aniversário</option>
+                                <option value="Poesia para o Dia das Mães">Poesia para o Dia das Mães</option>
+                                <option value="Frases para Decepção">Frases para Decepção</option>
+                                <option value="Frases Carinhosas de Amizade">Frases Carinhosas de Amizade</option>
+                                <option value="Frases de Escritores Famosos">Frases de Escritores Famosos</option>
+                                <option value="Poesias de Amor de Vinícius de Moraes">Poesias de Amor de Vinícius de Moraes</option>
+                                <option value="Frases sobre Sorriso">Frases sobre Sorriso</option>
+                                <option value="Frases do Pequeno Príncipe">Frases do Pequeno Príncipe</option>
+                                <option value="Cartas de Amizade">Cartas de Amizade</option>
+                                <option value="Epígrafe para TCC">Epígrafe para TCC</option>
+                                <option value="Mensagens de Natal">Mensagens de Natal</option>
+                                <option value="Poemas Quem Sou Eu">Poemas Quem Sou Eu</option>
                                 <option value="Amor">Amor</option>
-                                <option value="Amor Proprio" >Amor Proprio</option>
-                                <option value="Aniversario" >Aniversario</option>
-                                <option value="Autoestima" >Autoestima</option>
-                                <option value="Auto Ajuda" >Auto Ajuda</option>
-                                <option value="Boa noite" >Bom noite</option>
-                                <option value="Boa tarde" >Boa tarde</option>
-                                <option value="Bom dia" >Bom dia</option>
-                                <option value="Carta Para Ex" >Carta Para Ex</option>
-                                <option value="Decepção">Decepção</option>
-                                <option value="Decepção Amorosa" >Decepção Amorosa</option>
-                                <option value="Declaração de Amor" >Declaração de Amor</option>
-                                <option value="Desilusão" >Desilusão</option>
-                                <option value="Desilusão Amorosa" >Desilusão Amorosa</option>
-                                <option value="Dia das maes" >Dia das maes</option>
-                                <option value="Dia dos pais" >Dia dos pais</option>
-                                <option value="Familia" >Familia</option>
-                                <option value="Filhos" >Filhos</option>
-                                <option value="Fim de Relacionamento" >Fim de Relacionamento</option>
-                                <option value="Frustação" >Frustação</option>
-                                <option value="Ilusão" >Ilusão</option>
-                                <option value="Motivação" >Motivação</option>
-                                <option value="Namoro" >Namoro</option>
-                                <option value="Reciprocidade" >Reciprocidade</option>
-                                <option value="Recomeçar" >Recomeçar</option>
-                                <option value="Reflexões" >Reflexões</option>
-                                <option value="Relacionamento" >Relacionamento</option>
-                                <option value="Relacionamento Amoroso" >Relacionamento Amoroso</option>
-                                <option value="Saudade" >Saudade</option>
-                                <option value="Superação" >Superação</option>
-                                <option value="Texto +18">Texto +18</option>
-                                <option value="Texto de Amor">Texto de Amor</option>
-                                <option value="Texto de Decepção" >Texto de Decepção</option>
-                                <option value="Texto de Termino" >Texto de Termino</option>
-                                <option value="Texto Para Ex" >Texto Para Ex</option>
-                                <option value="Texto Romantico" >Texto Romantico</option>
-                                <option value="Texto Sobre a Vida" >Texto Sobre a Vida</option>
-                                <option value="Texto Sobre Reciprocidade" >Texto Sobre Reciprocidade</option>
-                                <option value="Texto Sobre Relacionamento" >Texto Sobre Relacionamento</option>
-            
+                                <option value="Mensagens curtas de Amor">Mensagens curtas de Amor</option>
+                                <option value="Poemas sobre o Aniversário">Poemas sobre o Aniversário</option>
+                                <option value="Poesia Felicidade de Fernando Pessoa">Poesia Felicidade de Fernando Pessoa</option>
+                                <option value="Frases de Parabéns">Frases de Parabéns</option>
+                                <option value="Frases Simples para o Namorado">Frases Simples para o Namorado</option>
+                                <option value="Poemas de Machado de Assis">Poemas de Machado de Assis</option>
+                                <option value="Poesia sobre Amizade Verdadeira">Poesia sobre Amizade Verdadeira</option>
+                                <option value="Frases de Tristeza">Frases de Tristeza</option>
+                                <option value="Frases de Alegria">Frases de Alegria</option>
+                                <option value="Frases Espíritas">Frases Espíritas</option>
+                                <option value="Frases Bonitas sobre Saudades">Frases Bonitas sobre Saudades</option>
+                                <option value="Textos Hugo Ribas">Textos Hugo Ribas</option>
+                                <option value="Textos Bia Civa">Textos Bia Civa</option>
+                                <option value="Textos Gisele Ribeiro">Textos Gisele Ribeiro</option>
+                                <option value="Textos Andrei Santos">Textos Andrei Santos</option>
+                                <option value="Textos Viviane de Oliveira Teixeira">Textos Viviane de Oliveira Teixeira</option>
+                                <option value="Textos Tiffany Guimarães">Textos Tiffany Guimarães</option>
+                                <option value="Textos Raquel Gonçalves">Textos Raquel Gonçalves</option>
+                                <option value="Textos Frederico Elboni">Textos Frederico Elboni</option>
+                                <option value="Textos Gustavo Lacombe">Textos Gustavo Lacombe</option>
+                                <option value="Textos Iande Albuquerque">Textos Iande Albuquerque</option>
+                                <option value="Textos Victor Fernandes">Textos Victor Fernandes</option>
+                                <option value="Textos Matheus Jacob">Textos Matheus Jacob</option>
+                                <option value="Textos Matheus Rocha">Textos Matheus Rocha</option>
+                                <option value="Textos Marcio Rodrigues">Textos Marcio Rodrigues</option>
+                                <option value="Textos Guilherme Pintto">Textos Guilherme Pintto</option>
+                                <option value="Textos Jay Leonardo">Textos Jay Leonardo</option>
+                                <option value="Textos Yami Couto">Textos Yami Couto</option>
+                                <option value="Textos Duda Costa">Textos Duda Costa</option>
+                                <option value="Textos Diego Henrique">Textos Diego Henrique</option>
+
+                                <option value="Textos Isabella Gonçalves">Textos Isabella Gonçalves</option>
+                                <option value="Textos Raonih Rocco">Textos Raonih Rocco</option>
+                                <option value="Textos Rafaela Paulino">Textos Rafaela Paulino</option>
+                                <option value="Textos Nathali Macedo">Textos Nathali Macedo</option>
+                                <option value="Textos Paulinho Rahs">Textos Paulinho Rahs</option>
+                                <option value="Textos Steph Luz">Textos Steph Luz</option>
+                                <option value="Textos Pamela Marques">Textos Pamela Marques</option>
+                                <option value="Textos Andrea Goes">Textos Andrea Goes</option>
+                                <option value="Textos Brendow H. Godoi">Textos Brendow H. Godoi</option>
+                                <option value="Textos Drica Serra">Textos Drica Serra</option>
+                                <option value="Textos Edgard Abbehusen">Textos Edgard Abbehusen</option>
+                                <option value="Textos Ester Chaves">Textos Ester Chaves</option>
+                                <option value="Textos Mallu Navarro">Textos Mallu Navarro</option>
+                                <option value="Textos Nivia Maria">Textos Nivia Maria</option>
+
                             </select>
                         </Form.Group>
                     </Form.Row>
